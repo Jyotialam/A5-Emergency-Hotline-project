@@ -76,7 +76,7 @@ This Section will have layout as figma
 
 ---
 
-## Functionalities
+## Functionalities************************************************
 
 ### 4. Heart Icons
 
