@@ -22,5 +22,7 @@
    no need any for loop
 
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
+   Answer:
    PreventDefault() stops the elements default action.. e.g form submit won't reload the page
+   💹
    stopPropagation() stop the event from bubbling up to parent elements

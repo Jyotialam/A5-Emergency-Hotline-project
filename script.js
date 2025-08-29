@@ -1,4 +1,3 @@
-// heart functionality
 let heartCount = 0;
 const heartBtns = document.getElementsByClassName("heart-btn");
 const heartCounter = document.getElementById("heart-counter");
@@ -8,7 +7,6 @@ for (const heartBtn of heartBtns) {
     heartCounter.innerText = heartCount;
   });
 }
-// copy button functionality
 let copyCount = 0;
 const copyBtns = document.getElementsByClassName("copy-btn");
 const copyCounter = document.getElementById("copy-counter");
@@ -16,17 +14,12 @@ for (const copyBtn of copyBtns) {
   copyBtn.addEventListener("click", function (e) {
     const card = e.currentTarget.closest(".card");
     const number = card.querySelector(".number").innerText;
-    // clipboard
     navigator.clipboard.writeText(number);
-
     copyCount++;
     copyCounter.innerText = +copyCount;
-
-    //
-    alert(`Copied number: ${number}`); //done alert
+    alert(`Copied number: ${number}`);
   });
 }
-//call buttons functionality
 const callBtns = document.getElementsByClassName("call-btn");
 for (const callBtn of callBtns) {
   callBtn.addEventListener("click", function (e) {
@@ -35,7 +28,6 @@ for (const callBtn of callBtns) {
     const number = card.querySelector(".number").innerText;
     const currentTime = new Date().toLocaleTimeString();
     let coinField = parseInt(document.getElementById("total-coin").innerText);
-    //
 
     if (coinField < 20) {
       alert("❌You don't have sufficient coin. Minimum 20 coins needed");
@@ -44,7 +36,6 @@ for (const callBtn of callBtns) {
       alert(`📞Calling ${title} ${number}......`);
       document.getElementById("total-coin").innerText = coinField - 20;
 
-      //history
       const historyContainer = document.getElementById("history-container");
       const div = document.createElement("div");
       div.className =
@@ -59,7 +50,6 @@ for (const callBtn of callBtns) {
   });
 }
 
-//clear btn
 document.getElementById("clear-btn").addEventListener("click", function () {
   const historyContainer = document.getElementById("history-container");
   historyContainer.innerHTML = "";
