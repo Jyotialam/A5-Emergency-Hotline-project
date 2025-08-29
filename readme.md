@@ -78,7 +78,7 @@ This Section will have layout as figma
 
 ## Functionalities************************************************
 
-### 4. Heart Icons
+### 4. Heart Icons ******************************************(Done)
 
 - Clicking on the 💗 **heart icon** of any card will increase the count in the Navbar
 
@@ -120,7 +120,7 @@ You have to create a `Readme.md` file. and write down following questions. Dont 
 
 ## 🧪 Challenges Part (10 Marks)
 
-- On clicking the **Copy button**, show an alert and **increase the copy count** (3 Marks)
+- On clicking the **Copy button**, show an alert and **increase the copy count** (3 Marks) (Done)✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅
 
 - Hotline number will be **copied on click** so it can be pasted anywhere (4 Marks)
 
